@@ -25,11 +25,16 @@
          height:100%;}
           .right-content{
         width: 78%;
-        height:90%;
+        height:100%;
      /*   background:blue;*/
    
     }
    </style>
+   <script>
+      function test_show3(){
+         var show_1=document.getElementById("rate_2");
+         show_1.style.display="block"}
+   </script>
    </head> 
 <body>
 
@@ -56,7 +61,7 @@
 </ul>
 </div>
     <div class="right-content">
-     <div class="rate_2" >
+     <div class="rate_2" style="display:none" id="rate_2">
  <input id="input-id" type="number" class="rating" min=0 max=5 step=1 data-size="lg" > 这是个很好的网站
 <input id="input-id" type="number" class="rating" min=0 max=5 step=1 data-size="lg" >  网站评级
 <input id="input-id" type="number" class="rating" min=0 max=5 step=1 data-size="lg" > 对网站的评价 </div>
