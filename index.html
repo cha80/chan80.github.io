@@ -10,16 +10,52 @@
 <script src="bootstrap-3.3.7-dist/themes/krajee-svg/theme.js"></script>
    <script src="bootstrap-3.3.7-dist/js/locales/lang.js"></script>
    <link href="bootstrap-3.3.7-dist/themes/krajee-svg/theme.css" media="all" rel="stylesheet" type="text/css" />
+   <style>
+     .main{
+       width:100%;
+        height:100%;
+       /* background:red;*/
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction:row;
+        justify-content: start;
+}
+      .left-menu{
+         width:22%;
+         height:100%;}
+          .right-content{
+        width: 78%;
+        height:90%;
+     /*   background:blue;*/
+   
+    }
+   </style>
    </head> 
 <body>
 
 <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
 <h1 align="center" > my first web </h1>
    <div class=main> 
-      <ul class="nav nav-pills nav-stacked">
-         <li><a> 网站简介</a></li>
-         <li><a> 网站简介</a></li>
+ <div class="left-menu">
+       
+       
+       <ul lass="nav nav-pills nav-justified">
+            
+            <li role="presentation" class="active">
+               
+                <a  data-toggle="collapse" data-target="#list"></a><br>
+                <ul id="list" class="collapse in">
+<li class="active">
+  <a href=" #spdd" onclick="test_show1()"  >网站信息</a></li><br>
+  <li role="presentation" ><a href="#sphy"  onclick="test_show()">GitHub</a></li>
+  
+  <br>
+  
+  <li role="presentation"><a href="#cxxi" onclick="test_show2()">每日日记</a></li><br>
+  <li role="presentation"><a href="#rate_2" onclick="test_show3()">网站评价</a></li>
 </ul>
+</div>
+    <div class="right-content">
      <div class="rate_2" >
  <input id="input-id" type="number" class="rating" min=0 max=5 step=1 data-size="lg" > 这是个很好的网站
 <input id="input-id" type="number" class="rating" min=0 max=5 step=1 data-size="lg" >  网站评级
@@ -28,6 +64,7 @@
 <br>
         
  <a class="btn btn-primary" href="">提交</a>
+    </div>
       </div>
 </body>
 </html>
