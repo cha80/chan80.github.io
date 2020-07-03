@@ -33,7 +33,12 @@
    <script>
       function test_show3(){
          var show_1=document.getElementById("rate_2");
+         if(show_1.style.display=="none"){
          show_1.style.display="block"}
+      else
+         show_1.style.display=="none";
+      }
+         
    </script>
    </head> 
 <body>
@@ -48,14 +53,11 @@
             
             <li role="presentation" class="active">
                
-                <a  data-toggle="collapse" data-target="#list">cha80网站</a><br>
+                <a  data-toggle="collapse" data-target="#list" >cha80网站</a><br>
                 <ul id="list" class="collapse in">
-<li class="active">
-  <a href=" #spdd" onclick="test_show1()"  >网站信息</a></li><br>
-  <li role="presentation" ><a href="#sphy"  onclick="test_show()">GitHub</a></li>
-  
+<li class="active"> <a href=" #spdd" onclick="test_show1()"  >网站信息</a></li><br>
+<li role="presentation" ><a href="#sphy"  onclick="test_show()">GitHub</a></li>
   <br>
-  
   <li role="presentation"><a href="#cxxi" onclick="test_show2()">每日日记</a></li><br>
   <li role="presentation"><a href="#rate_2" onclick="test_show3()">网站评价</a></li>
 </ul>
@@ -66,6 +68,11 @@
 <input id="input-id" type="number" class="rating" min=0 max=5 step=1 data-size="lg" >  网站评级
 <input id="input-id" type="number" class="rating" min=0 max=5 step=1 data-size="lg" > 对网站的评价 <br>
  <a class="btn btn-primary" href="">提交</a></div>
+       <div class="webinfo_1">
+          
+                  <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> <p>本网站由cha80基于bootstrap开发</p>
+                   
+                   
     </div>
       </div>
 </body>
