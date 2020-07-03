@@ -41,7 +41,12 @@
          show_1.style.display=="none";
       }
       }}
-         
+         function test_show1(){
+            var show_2=document.getElementById("webinfo_1");
+            if(show_2.style.display=="none"){
+               show_2.style.display="block";
+               show_1.style.display="none";}
+         }
    </script>
    </head> 
 <body>
