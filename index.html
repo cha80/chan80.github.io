@@ -102,13 +102,14 @@
 <script>
 	       function time_now(){
 	       var date = new date();
-	       var hours= date.getHours();//获取时间
-	       var munites=date.getMunites();
-	       var second=date.getSeconds()；
-	       document.write("当前时间是："+hours+"时"+munites+"分"+second+"秒")
+	       var year= date.getFullyear();//获取时间
+	       var Month=date.getMonth()+1;
+	       var date=date.getDate()；
+	       document.getElementById("now_time").innerText=year+"年"+month+"月"+date+""+nowtime.toLocaleTimeString();
 	       }
+	setInterval("time_now()",1000);
 	       </script>
-	       <label for ="time_now"></label>
+	       <span id="now_time"> </span>
                    
     </div>
        <div class="github_1" style="display:none " id="github_1">
