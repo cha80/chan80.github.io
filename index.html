@@ -103,9 +103,9 @@
 	       function time_now(){
 	       var date = new date();
 	       var year= date.getFullyear();//获取时间
-	       var Month=date.getMonth()+1;
+	       var month=date.getMonth()+1;
 	       var date=date.getDate()；
-	       document.getElementById("now_time").innerText=year+"年"+month+"月"+date+""+nowtime.toLocaleTimeString();
+	       document.getElementById("now_time").innerText=year+"年"+month+"月"+date+""+date.toLocaleTimeString();
 	       }
 	setInterval("time_now()",1000);
 	       </script>
