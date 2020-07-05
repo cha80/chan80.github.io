@@ -52,10 +52,7 @@
 	   height:15px;}
    </style>
    <script>
-	   $(".form_datetime").datetimepicker({
-        format: 'yyyy-mm-dd hh:ii',
-        language:'zh-CN'
-});
+
 	   
       function test_show3(){
          var show_1=document.getElementById("rate_2");
@@ -95,7 +92,7 @@
         <div class='col-sm-6'>
             <div class="form-group">
                 <div class='input-group date' id='datetimepicker1'>
-                    <input type='text' class="form-control" />
+                    <input type='text' class="form-control" placehold="今天的日期"/>
                     <span class="input-group-addon">
                         <span class="glyphicon glyphicon-calendar"></span>
                     </span>
@@ -103,6 +100,10 @@
             </div>
         </div>
         <script type="text/javascript">
+			   $(".form_datetime").datetimepicker({
+        format: 'yyyy-mm-dd hh:ii',
+        language:'zh-CN'
+});
             $(function () {   
                 $('#datetimepicker1').datetimepicker();
             });
