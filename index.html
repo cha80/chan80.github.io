@@ -35,10 +35,6 @@
           .right-content{
         width: 70%;
 		  height:70%;
-        
-            
-    
-   
     }
 	   .main0{
 		   width:100%;
@@ -102,6 +98,10 @@
         </div>
         <script type="text/javascript">
 	     $(function () {
+		     $("#datetimepicker1").datetimepicker({
+    	format: 'yyyy-mm-dd hh:ii',
+    	language:'zh-CN'
+});
                 $('#datetimepicker1').datetimepicker();
             });
                
