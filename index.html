@@ -52,6 +52,11 @@
 	   height:15px;}
    </style>
    <script>
+	   $(".form_datetime").datetimepicker({
+        format: 'yyyy-mm-dd hh:ii',
+        language:'zh-CN'
+});
+	   
       function test_show3(){
          var show_1=document.getElementById("rate_2");
          if(show_1.style.display=="none"){
@@ -98,8 +103,7 @@
             </div>
         </div>
         <script type="text/javascript">
-            $(function () {    format: 'yyyy-mm-dd hh:ii',
-		    language:'zh-CN'
+            $(function () {   
                 $('#datetimepicker1').datetimepicker();
             });
         </script>
