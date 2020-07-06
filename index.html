@@ -47,7 +47,7 @@
 	   .btn_pos{
 	   witdth:65%;
 	   height:15px;}
-	   .git_1 p:first-letter{
+	   .github_1 p:first-letter{
 	   	font-size:3em;
 	   	color:gold;
 	   	vertical-align: middle;}
@@ -61,6 +61,7 @@
          show_1.style.display="block";
             document.getElementById("webinfo_1").style.display="none";
             document.getElementById("github_1").style.display="none";
+		 document.getElementById("day_note").style.display="none";
          }
     
      
@@ -69,7 +70,9 @@
             var show_2=document.getElementById("webinfo_1");
             if(show_2.style.display=="none"){
                show_2.style.display="block";
-               document.getElementById("rate_2").style.display="none";}
+               document.getElementById("rate_2").style.display="none";
+	     document.getElementById("day_note").style.display="none";
+	     document.getElementById("rate_2").style.display="none";}
          }
       function test_show(){
          var   show_git=document.getElementById("github_1");
