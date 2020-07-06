@@ -31,10 +31,10 @@
 }
       .left-menu{
          width:30%;
-         height:70%;}
+         height:65%;}
           .right-content{
         width: 70%;
-		  height:70%;
+		  height:65%;
     }
 	   .main0{
 		   width:100%;
@@ -47,6 +47,10 @@
 	   .btn_pos{
 	   witdth:65%;
 	   height:15px;}
+	   .git_1 p:first-letter{
+	   	font-size:3em;
+	   	color:gold;
+	   	vertical-align: middle;}
    </style>
    <script>
 
@@ -73,18 +77,25 @@
             show_git.style.display="block";
             document.getElementById("webinfo_1").style.display="none";
             document.getElementById("rate_2").style.display="none";
+		 document.getElementById("day_note").style.display="none";
          }
-         
-         
       }
+	     function test_show2(){
+		     var day_note=document.getElementById("day_note");
+		      if(day_note.style.display=="none"){
+            day_note.style.display="block";
+            document.getElementById("webinfo_1").style.display="none";
+            document.getElementById("rate_2").style.display="none";
+			      document.getElementById("github_1").style.display="none";
+		     }
+	   
    </script>
    </head> 
 <body>
-
-<span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
-<h1 align="center" > my first web </h1> 
+<div class="title_web" style="background: black">
+<h1 align="center"  style="color: white;margin: 0;padding: 0;"> github小站</h1> </div>
 	<div class="main0">
-    <div class="container" style="height:5px ; width:5px">
+    <div class="container">
     <div class="row" >
         <div class='col-sm-6'>
             <div class="form-group">
@@ -131,26 +142,33 @@
        <a href=" #webinfo_1" onclick="test_show1()"  >网站信息</a></li><br>
 <li role="presentation" ><a href="#sphy"  onclick="test_show()">GitHub</a></li>
   <br>
-  <li role="presentation"><a href="#cxxi" onclick="test_show2()">每日日记</a></li><br>
+  <li role="presentation"><a href="#day_note" onclick="test_show2()">每日日记</a></li><br>
   <li role="presentation"><a href="#rate_2" onclick="test_show3()">网站评价</a></li>
 </ul>
 </div>
     <div class="right-content">
      <div class="rate_2" style="display:none" id="rate_2">
- <input id="input-id" type="number" class="rating" min=0 max=5 step=1 data-size="lg" > 这是个很好的网站
-<input id="input-id" type="number" class="rating" min=0 max=5 step=1 data-size="lg" >  网站评级
-<input id="input-id" type="number" class="rating" min=0 max=5 step=1 data-size="lg" > 对网站的评价 <br>
+ <input id="input-id" type="number" class="rating" min=0 max=5 step=1 data-size="md" > 网站页面布局
+<input id="input-id" type="number" class="rating" min=0 max=5 step=1 data-size="md" >  网站内容评级
+<input id="input-id" type="number" class="rating" min=0 max=5 step=1 data-size="md" > 整体评价 <br>
  <a class="btn btn-primary" href="" onclick="alert('感谢评价!')">提交</a></div>
        <div class="webinfo_1" style="display:block" id="webinfo_1">
           
-                  <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> 本网站由cha80基于bootstrap开发,界面简洁，是本人的GitHub小站。.
+                  <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> 本网站由cha80基于bootstrap开发,界面简洁，是本人的GitHub小站。. <!--
+                                                                      	网站信息页
+                                                                      -->
 
                    
     </div>
        <div class="github_1" style="display:none " id="github_1">
-          <iframe src="https://baike.hk.xileso.top/baike-GitHub?wprov=srpw1_0" width="80%">
-          </iframe>
+         <p>github是一个全球性的代码托管平台 GitHub is how people build software
+We’re supporting a community where more than 50 million* people learn, share, and work together to build software.
+      </p> 
        </div>
+	      	<div class="day_note" style="display: none" id="day_note"> 
+		今天是7月6日，星期一：天气雨，杭州这几天都在下雨。
+		
+	</div>
       </div>
 	  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="width:100%">
   <!-- Indicators -->
