@@ -19,7 +19,9 @@
 <script src="bootstrap-3.3.7-dist/themes/krajee-svg/theme.js"></script>
 	<script src="bootstrap-3.3.7-dist/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
    <script src="bootstrap-3.3.7-dist/js/locales/lang.js"></script>
-	 <script src="bootstrap-3.3.7-dist/dist/photo-sphere-viewer.min.js"></script> 
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/dist/photo-sphere-viewer.css"/>
+
+	 <script src="bootstrap-3.3.7-dist/dist/photo-sphere-viewer.js"></script> 
    <link href="bootstrap-3.3.7-dist/themes/krajee-svg/theme.css" media="all" rel="stylesheet" type="text/css" />
    <style>
     /* .main{
@@ -50,6 +52,10 @@
 		   width:35%;
 			   height:15px;
 	   float:left;}
+	     #viewer {
+    width: 100vw;
+    height: 50vh;
+  }
 	   .btn_pos{
 	   witdth:65%;
 	   height:15px;}
@@ -163,9 +169,14 @@
                     </span>   </div> </div>
        <div class="webinfo_1" style="display:block" id="webinfo_1">
           
-                  <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> 本网站由cha80基于bootstrap开发,界面简洁，是本人的GitHub小站。. <!--
-                                                                      	网站信息页
-                                                                      -->
+                  <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> 本网站由cha80基于bootstrap开发,界面简洁，是本人的GitHub小站。<div id="viewer">
+	       </div><script>
+  var viewer = new PhotoSphereViewer.Viewer({
+    container: document.querySelector('#viewer'),
+    panorama: 'bootstrap-3.3.7-dist/img/PANO1.jpg'
+  });
+</script>
+	       <!--网站信息页 -->
 
                    
     </div>
