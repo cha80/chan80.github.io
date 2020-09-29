@@ -1,8 +1,6 @@
-
 <!DOCTYPE html>
  <html>
      <head>
-	     <meta name="viewport" content="width=device-width, initial-scale=1">
       <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
      <link href="bootstrap-3.3.7-dist/css/star-rating.css" media="all" rel="stylesheet" type="text/css" />
 <script src="bootstrap-3.3.7-dist/js/jquery.min.js"></script>
@@ -28,16 +26,129 @@
         background:linear-gradient(45deg,red,blue)
        }
 	   .login{
-		  margin-left: 20%;
- margin-top: 20%;
+		  margin-left: 40%;
+ margin-top: 10%;
    margin-right: 20%;
-   margin-bottom: 45%;
+   margin-bottom: 20%;
    background:white ;
-   width :60%; 
-   height:35%
+   width :300px ; 
+   height:300px
 	   }
+     
+     
+     .li_t{
+
+  left: 50%;
+  position: relative;
+  width: 100px;
+  height: 120px;
+
+  
+
+     }
+     .li_p:nth-child(1){
+ 
+       width:100px;
+       height: 5px;
+       transform: rotate(0deg);
+transform-origin:  center;
+       background: #000f00;
+       position: absolute;
+      
+
+       
+     }
+        .li_p:nth-child(2){
+          transform-origin: center;
+       width:100px;
+       height: 5px;
+       position: absolute;
+      transform: rotate(45deg);
+    
+      background: #000f00;
+       
+      
+      
+     }     .li_p:nth-child(3){
+      transform-origin: center;
+       width:100px;
+       height: 5px;
+    position: absolute;
+       transform: rotate(90deg);
+       background: #000f00;
+     }   
+       .li_p:nth-child(4){
+      position: absolute; 
+      transform-origin: center;
+       width:100px;
+       height: 5px;
+       transform: rotate(135deg);
+       
+       background: #000f00; 
+      
+     }     .li_p4:nth-child(5){
+       
+       width:100px;
+       transform-origin: center;
+       height: 5px;
+       transform: rotate(180deg);
+        
+       background: #000f00; 
+       position: absolute; 
+      
+     }     .li_p:nth-child(6){
+       width:100px;
+       transform-origin: center;
+       height: 5px;
+       transform: rotate(225deg);
+ 
+       background: #000f00; 
+       position: absolute; 
+   
+     }
+     .li_p:nth-child(7){
+       width:100px;
+       transform-origin: center ;
+       height: 5px;
+       transform: rotate(270deg);
+     
+       background: #000f00; 
+       position: absolute; 
+       
+     }
+     .li_p:nth-child(8){
+      width:100px;
+       height: 5px;
+       transform: rotate(315deg);
+      transform-origin: center ;
+       background: #000f00; 
+       position: absolute; 
+       
+     }
+     .li_p:nth-child(9){
+      width:100px;
+       height: 5px;
+       transform: rotate(360deg);
+      transform-origin: center ;
+       background: #000f00; 
+       position: absolute; 
+       
+     }
+     .circle{
+       border-radius: 50%;
+       position:absolute;
+  left: 29%;
+  top:-15px;
+ width: 40px;
+ height: 40px;
+ background: #a3005b;
+ opacity:100%;
+     }
+  
+     
+
 	  .login_x{
-      padding-left: 10px;
+      padding-left: 20px;
  padding-top: 20px;
  padding-right: 20px;
  padding-bottom: 20px;
@@ -46,8 +157,8 @@
       </style>
      </head>
      <body>
-         <h1 align ="center" style="color:white">
-             登录吧！
+         <h1 align ="center">
+             登录
          </h1>
        <div class="login"  > 
       <div class="login_x">
@@ -57,12 +168,12 @@
         
  <span class="glyphicon glyphicon-apple" aria-hidden="true"></span>
   <input type="text" class="form-control" placeholder="密码" aria-describedby="basic-addon1">  <br>  <br>
-  <a href="index2.html"><button type="button"  onclick ="alert('欢迎！')" class="btn btn-primary btn-lg" data-toggle="modal"  style="width:100%">
+  <a href="index.html"><button type="button"  onclick ="alert('欢迎！')" class="btn btn-primary btn-lg" data-toggle="modal"  style="width:100%">
    提交登录
   </button>
 </a>
-
-  <div class="alert alert-warning alert-dismissible" role="alert">  <br>
+  <br>
+  <div class="alert alert-warning alert-dismissible" role="alert">
     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
     <strong>可以不用输入密码</strong> by chen
   </div><div>
@@ -71,5 +182,19 @@
 </div>
 
       </div>
+       <div class="li_t">
+         <div class="li_p"></div>
+         <div class="li_p"></div>
+        <div class="li_p"> </div>
+        <div class="li_p"> </div>
+        <div class="li_p"> </div>
+        <div class="li_p"> </div>
+        <div class="li_p"> </div>
+        <div class="li_p"> </div>
+        <div class="li_p"> </div>
+        
+    
+        <div class="circle"></div>
+       </div>
      </body>
  </html>
