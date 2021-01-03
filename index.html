@@ -167,11 +167,10 @@ transform-origin:  center;
   您的浏览器不支持该音频格式。
 </audio>
 <script>
-(function(){
-var $audio = new audio();
- $audio.src='bootstrap-3.3.7-dist/img/迷人的危险.mp3';
-$audio.play();}
-)()
+$(window).one('touchstart', function(){
+    music.play();
+})
+
 </script>
  
        <a src="#" style="color:white">  <h1 align ="center" >
