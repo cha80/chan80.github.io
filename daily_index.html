@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet"><link rel="icon" href="icon21.png" type="image/x-icon"/>
+	<link href="bootstrap-3.3.7-dist/css/star-rating.css" media="all" rel="stylesheet" type="text/css" />
+	<script src="bootstrap-3.3.7-dist/js/jquery.min.js"></script>
+	<script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+	<script src="bootstrap-3.3.7-dist/js/moment.js"></script>
+	<script scr="https://gitee.com/cha80/gitee.bootstrap.js/raw/master/js/collapse.js" ></script>
+	<title>
+		每日心得
+	</title>
+    <style>
+       html,body{
+           
+            position: relative;
+            height:100%;
+-webkit-animation:mymove3 6s infinite;
+background:linear-gradient(132deg,yellow,blue);
+
+background-size:200% 200%;
+background-repeat: no repeat;}
+@-webkit-keyframes mymove3{
+0%{
+background-position:0% 0% ; }
+25%{
+background-position:25% 25%;
+}50%{
+background-position:50% 50% ; }
+75%{
+background-position:75% 75%;
+}100%{
+background-position:100% 100%;
+}
+}
+
+        }
+        </style>
+</head>
+
+<body style="">
+    <a href="index.html" style="position:absolute ;float:right"> <button type="button"> 首页</button></a>
+	<h1 align="center">
+		学习日志
+	</h1> 
+	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingOne">
+				<h4 class="panel-title">
+					<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				2021.3.6
+					</a>
+				</h4>
+			</div>
+			<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+				<div class="panel-body">
+				1.今天了解了两种Linux （Redhat系列和Ubuntu） 的包管理工具yum 和apt，
+           以下Linux系统通用命令    
+            2.ls 查看下属文件夹或者文件 cat 查看文件内容 vim 修改文本
+           i按键进入vim编辑模式 
+           ！q为不保存更改退出！wq为保存更改并退出vim编辑模式 esc按键 退回一般模式此时冒号在左下角闪烁。
+           3.Linux删除文件夹命令
+rm -rf /var/log/httpd/access
+将会删除/var/log/httpd/access目录以及其下所有文件、文件夹
+Linux删除文件命令
+rm -f /var/log/httpd/access.log
+  了解了linux 系统性能监控工具（类似于Windows下的任务管理器）zabbix和Prometheus
+  事实图形界面显示系统的各项运行指标，mkdir 命令创建文件
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingTwo">
+				<h4 class="panel-title">
+					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+						aria-controls="collapseTwo">
+					2021.4.5
+						</a>
+				</h4>
+			</div>
+			<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+				<div class="panel-body">
+				政府工作报告说，提高退休人员基本养老金、优抚对象抚恤和生活补助标准。推进养老保险全国统筹，规范发展第三支柱养老保险。完善全国统一的社会保险公共服务平台。
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingThree">
+				<h4 class="panel-title">
+					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false"
+						aria-controls="collapseThree">
+					2021，6.7 日志
+						</a>
+				</h4>
+			</div>
+			<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+				<div class="panel-body">
+					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+					non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+					put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+					labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+					beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
+					VHS.
+				</div>
+			</div>
+		</div><div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingFour">
+				<h4 class="panel-title">
+					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false"
+						aria-controls="collapseFour">
+					敬请期待
+						</a>
+				</h4>
+			</div>
+			<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+				<div class="panel-body">
+			折叠控件bootstrap蛮好用的
+				</div>
+			</div>
+		</div>
+         <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingFive">
+				<h4 class="panel-title">
+					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false"
+						aria-controls="collapseFive">
+					折叠工具日记
+						</a>
+				</h4>
+			</div>
+			<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+				<div class="panel-body">
+			折叠控件bootstrap蛮好用的今天换了台MacBook
+            <br>
+            <img src="img/sc2.png" style="width:150px;height:160px"/>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</div>
+	</div>
+ 
+
+
+</body>
+
+</html>
