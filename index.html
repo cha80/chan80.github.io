@@ -1,7 +1,7 @@
 <!DOCTYPE html>
  <html>
      <head>
- 
+         <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name=“keywords” content = " cha80网页网站个人博客"  />
@@ -29,7 +29,16 @@
          </title>
    <style>
        body{
-        background:linear-gradient(45deg,red,blue)
+           position:relative;
+           background:linear-gradient(131deg,purple,red);
+           background-size:200% 200%;
+           -webkit-animation :mymo 5s infinite;
+   
+        
+       }
+       @-webkit-keyframes mymo{
+           from{background-position:0% 0%}
+           to{background-position:100% 100%}
        }
 	   .login{
 		  margin-left: 20%;
@@ -148,7 +157,7 @@ transform-origin:  center;
  width: 40px;
  height: 40px;
  background: #a3005b;
- opacity:100%;
+ opacity:0%;
      }
   
      
@@ -176,10 +185,11 @@ $('html').one('touchstart',function(){
 });
 
 </script>
- <a href="daily_index.html" style="position: absolute"><button> 日志</button> </a>
+ <a href="hexo/index.html" style="position:absolute"> <button type="button"> hexo博客 </button></a>
        <a src="#" style="color:black">  <h1 align ="center" >
              登录
-         </h1> </a>
+         </h1> </a> 
+         
        <div class="login"  > 
       <div class="login_x">
   <span class="glyphicon glyphicon-user" aria-hidden="true"> </span>
@@ -191,7 +201,7 @@ $('html').one('touchstart',function(){
   <a href="index2.html"><button type="button"  onclick ="alert('欢迎！')" class="btn btn-primary btn-lg" data-toggle="modal"  style="width:100%">
    提交登录
   </button>
-</a>
+</a>      <a href="index_daily.html" ><button> 日志</button></a>  <a href="https://ip3862817916.mobgslb.tbcache.com/677520386CC377171DA265BA2/03000801005EA40030244975BDDFE8898D596A-E688-4E25-BC36-94E3DCE892F4.mp4?ccode=0501&duration=16&expire=18000&psid=294268d6fa6a1f66fd53f591c59df7ce47e30&ups_client_netip=73c12e39&ups_ts=1615908716&ups_userid=&utid=WlLjF5BjnksCAdyv649xnXLK&vid=XNDY0NzkwMjE4NA&vkey=B2b619dba7a285730d020a4d5187aa48b&eo=1&t=fff5b67c2be1684&rid=200000006DF81205EE6AE6FA7CE3B9B607DEDA4702000000&type=mp4hd&bc=2&dre=u21&si=42&dst=1&ali_redirect_domain=ykugc.cp31.ott.cibntv.net&ali_redirect_ex_ftag=ab1e58fb940d408211c3da6a9f531d2332cadd89d2afc523&ali_redirect_ex_tmining_ts=1615908803&ali_redirect_ex_tmining_expire=3600&ali_redirect_ex_hot=100" ><button> 搞笑视频</button></a>
   <br>
   <div class="alert alert-warning alert-dismissible" role="alert">
     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -202,19 +212,7 @@ $('html').one('touchstart',function(){
 </div>
 
       </div>
-<style>
-body{
-Background:URL(bootstrap-3.3.7-dist/img/57c54e32b0dcf.jpg);
-Background-size:100% 100%;
 
-
-	background-repeat:no-repeat;
-
-margin:0 ;padding:0;
-}
-
-background
-</Style>
 
 
 
@@ -234,4 +232,3 @@ background
        </div>
      </body>
  </html>
-
